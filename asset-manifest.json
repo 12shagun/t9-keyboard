@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/t9-keyboard/static/css/main.018a71a1.chunk.css",
+    "main.js": "/t9-keyboard/static/js/main.60361b4e.chunk.js",
+    "main.js.map": "/t9-keyboard/static/js/main.60361b4e.chunk.js.map",
+    "runtime-main.js": "/t9-keyboard/static/js/runtime-main.e19b4730.js",
+    "runtime-main.js.map": "/t9-keyboard/static/js/runtime-main.e19b4730.js.map",
+    "static/js/2.8f8f7b63.chunk.js": "/t9-keyboard/static/js/2.8f8f7b63.chunk.js",
+    "static/js/2.8f8f7b63.chunk.js.map": "/t9-keyboard/static/js/2.8f8f7b63.chunk.js.map",
+    "index.html": "/t9-keyboard/index.html",
+    "precache-manifest.4ec78a65cd65e8e05594bf7e2868aa45.js": "/t9-keyboard/precache-manifest.4ec78a65cd65e8e05594bf7e2868aa45.js",
+    "service-worker.js": "/t9-keyboard/service-worker.js",
+    "static/css/main.018a71a1.chunk.css.map": "/t9-keyboard/static/css/main.018a71a1.chunk.css.map",
+    "static/js/2.8f8f7b63.chunk.js.LICENSE.txt": "/t9-keyboard/static/js/2.8f8f7b63.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e19b4730.js",
+    "static/js/2.8f8f7b63.chunk.js",
+    "static/css/main.018a71a1.chunk.css",
+    "static/js/main.60361b4e.chunk.js"
+  ]
+}
