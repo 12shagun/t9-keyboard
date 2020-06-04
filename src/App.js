@@ -32,7 +32,7 @@ class App extends React.Component {
                       mouseDownTime:0,
                       mouseUpTime:0});
     }
-    else if(current-this.state.startTime>700||!bool)
+    else if(current-this.state.startTime>500||!bool)
     {
       this.setState({clicks:1});
       var s = [...this.state.text,ka[0]];
