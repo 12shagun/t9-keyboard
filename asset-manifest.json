@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/t9-keyboard/static/css/main.018a71a1.chunk.css",
-    "main.js": "/t9-keyboard/static/js/main.60361b4e.chunk.js",
-    "main.js.map": "/t9-keyboard/static/js/main.60361b4e.chunk.js.map",
+    "main.css": "/t9-keyboard/static/css/main.ca12a620.chunk.css",
+    "main.js": "/t9-keyboard/static/js/main.3de9f3dc.chunk.js",
+    "main.js.map": "/t9-keyboard/static/js/main.3de9f3dc.chunk.js.map",
     "runtime-main.js": "/t9-keyboard/static/js/runtime-main.e19b4730.js",
     "runtime-main.js.map": "/t9-keyboard/static/js/runtime-main.e19b4730.js.map",
-    "static/js/2.8f8f7b63.chunk.js": "/t9-keyboard/static/js/2.8f8f7b63.chunk.js",
-    "static/js/2.8f8f7b63.chunk.js.map": "/t9-keyboard/static/js/2.8f8f7b63.chunk.js.map",
+    "static/js/2.fb037f3e.chunk.js": "/t9-keyboard/static/js/2.fb037f3e.chunk.js",
+    "static/js/2.fb037f3e.chunk.js.map": "/t9-keyboard/static/js/2.fb037f3e.chunk.js.map",
     "index.html": "/t9-keyboard/index.html",
-    "precache-manifest.4ec78a65cd65e8e05594bf7e2868aa45.js": "/t9-keyboard/precache-manifest.4ec78a65cd65e8e05594bf7e2868aa45.js",
+    "precache-manifest.4ad3b1a59c9e4b88128854e999f6c2ec.js": "/t9-keyboard/precache-manifest.4ad3b1a59c9e4b88128854e999f6c2ec.js",
     "service-worker.js": "/t9-keyboard/service-worker.js",
-    "static/css/main.018a71a1.chunk.css.map": "/t9-keyboard/static/css/main.018a71a1.chunk.css.map",
-    "static/js/2.8f8f7b63.chunk.js.LICENSE.txt": "/t9-keyboard/static/js/2.8f8f7b63.chunk.js.LICENSE.txt"
+    "static/css/main.ca12a620.chunk.css.map": "/t9-keyboard/static/css/main.ca12a620.chunk.css.map",
+    "static/js/2.fb037f3e.chunk.js.LICENSE.txt": "/t9-keyboard/static/js/2.fb037f3e.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.e19b4730.js",
-    "static/js/2.8f8f7b63.chunk.js",
-    "static/css/main.018a71a1.chunk.css",
-    "static/js/main.60361b4e.chunk.js"
+    "static/js/2.fb037f3e.chunk.js",
+    "static/css/main.ca12a620.chunk.css",
+    "static/js/main.3de9f3dc.chunk.js"
   ]
 }
