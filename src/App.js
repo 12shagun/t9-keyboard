@@ -17,25 +17,26 @@ class App extends React.Component {
     let string=[...this.state.text];
     let lastChar= string[string.length-1];
     let isButtonSame=characters.includes(lastChar);
+    let newText;
     // for long press
     if(mouseUpTime-mouseDownTime>=650)              
     {
       this.setState({clicks:1});
-      var newText = [...this.state.text,characters[characters.length-1]];
+       newText = [...this.state.text,characters[characters.length-1]];
       this.setState({startTime: new Date().getTime()});
     }
     // for first click
     else if(currentTime-this.state.startTime>700||!isButtonSame)
     {
       this.setState({clicks:1});
-      var newText = [...this.state.text,characters[0]];
+       newText = [...this.state.text,characters[0]];
       this.setState({startTime: new Date().getTime()});
     }
     // for further clicks
     else
     {
 
-      var newText=[...this.state.text];
+       newText=[...this.state.text];
       newText.pop();
       newText.push(characters[this.state.clicks%characters.length]);
       this.setState({startTime: new Date().getTime()});
