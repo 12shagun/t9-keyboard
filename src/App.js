@@ -1,6 +1,6 @@
 import React from 'react';
-import './app.css';
-import Button1 from "./button1"
+import Buttons from "./Buttons";
+import styled from "styled-components";
 
 class App extends React.Component {
   state={
@@ -13,10 +13,10 @@ class App extends React.Component {
   //first click or more than one clicks then print the respective character
   showText= (characters,mouseDownTime,mouseUpTime)=>{
     this.setState(prestate=>({clicks: prestate.clicks +1}));
-    let currentTime = new Date().getTime();
-    let string=[...this.state.text];
-    let lastChar= string[string.length-1];
-    let isButtonSame=characters.includes(lastChar);
+    const currentTime = new Date().getTime();
+    const string=[...this.state.text];
+    const lastChar= string[string.length-1];
+    const isButtonSame=characters.includes(lastChar);
     let newText;
     // for long press
     if(mouseUpTime-mouseDownTime>=650)              
@@ -50,31 +50,35 @@ class App extends React.Component {
     string.pop();
     this.setState({text:string});
   }
+  static defaultProps={
+    keypad:[
+      ["1","1",".,"],
+      ["abc2","2","abc"],
+      ["def3","3","def"],
+      ["ghi4","4","ghi"],
+      ["jkl5","5","jkl"],
+      ["mno6","6","mno"],
+      ["pqrs7","7","pqrs"],
+       ["tuv8","8","tuv"],
+       ["wxyz9","9","wxyz"],
+       ["*","*","+"],
+       [" 0","0","space"],
+       ["#","#","^"]
+    ]
+  }
+  
  render(){
   //list of button names and characters stored in it
-   var object=[
-     ["1","1",".,"],
-     ["abc2","2","abc"],
-     ["def3","3","def"],
-     ["ghi4","4","ghi"],
-     ["jkl5","5","jkl"],
-     ["mno6","6","mno"],
-     ["pqrs7","7","pqrs"],
-      ["tuv8","8","tuv"],
-      ["wxyz9","9","wxyz"],
-      ["*","*","+"],
-      [" 0","0","space"],
-      ["#","#","^"]
-   ];
-   let op=object.map((item)=><Button1  items={item} onclick={this.showText}/>);
+ 
+   let op=this.props.keypad.map((key)=><Buttons  keys={key} onclick={this.showText}/>);
   
   return (
-    <div >
-      <div className="btn-toolbar mb-3 body">
-        <p className="text" >{(this.state.text)?this.state.text:"Type"}|</p>
-        <button onClick={this.clear}>Clear</button>
+    <div style={{ marginLeft: "42%",marginTop: "14%"}}>
+      <div className="btn-toolbar mb-3" >
+        <Screen className="text" >{(this.state.text)?this.state.text:"Type"}|</Screen>
+        <StyledButtons onClick={this.clear}>Clear</StyledButtons>
        </div>
-       <div className="container">
+       <div style={{display:"flex",flexWrap:"wrap",width:"200px"}}>
         {op}
        </div>
     </div>
@@ -83,3 +87,21 @@ class App extends React.Component {
 }
 
 export default App;
+//styled-components for buttons
+const StyledButtons=styled.button`
+  width: 55px;
+  height: 50px;
+  margin: 3px;
+  border-radius: 12px;
+  `;
+  //styled-components for text showing on screen
+  const Screen=styled.p`
+  background-color: rgb(230, 230, 241);
+  margin-bottom: 10px; 
+  width: 125px; 
+  max-width: 125px;
+  max-height: 100px;
+  padding: 2px;
+  word-wrap: break-word;
+  border-radius: 4px;
+  `;
